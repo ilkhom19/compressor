@@ -1,6 +1,6 @@
 # String Compressor
 
-This Java program provides a basic implementation of a compression algorithm that compresses strings by storing repeated characters along with the number of repetitions. The compressed format includes the character followed by "±" and the count of repetitions.
+This Java program provides a basic implementation of a compression algorithm (without the use of any external library) that compresses strings by storing repeated characters along with the number of repetitions. The compressed format includes the character followed by "±" and the count of repetitions.
 
 ## Usage
 
