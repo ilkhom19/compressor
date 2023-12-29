@@ -39,18 +39,31 @@ The compression and decompression methods include error handling to ensure the i
 ## Examples
 
 ```java
-String original = "ABCDE";
-String compressed = Compressor.compress(original);
-String decompressed = Compressor.decompress(compressed);
+import java.io.OutputStream;
 
-System.out.println("Original: " + original);
-System.out.println("Compressed: " + compressed);
-System.out.println("Decompressed: " + decompressed);
+String input = "A$$@S!NNNssss";
+String compressed = Compressor.compress(input);
+String decompressed = Compressor.decompress(compressed);
+System.out.
+
+println("Input: "+input);
+System.out.
+
+println("Compressed: "+compressed);
+System.out.
+
+println("Decompressed: "+decompressed);
+
+Output:
+
+Input: "A$$@S!NNNssss"
+Compressed: "A±1$±2@±1S±1!±1N±3s±4"
+Decompressed: "A$$@S!NNNssss"
 ```
 
 ## Unit Tests
 
-Unit tests are recommended to validate the correctness of the compression and decompression methods. Sample unit tests are provided in the `CompressorTest` class.
+Unit tests are recommended to validate the correctness of the compression and decompression methods. Unit tests are provided in the `CompressorTest` class.
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -68,3 +81,10 @@ class CompressorTest {
         // tests
     }
 }
+```
+
+
+## Acknowledgments
+
+- Done for the [JetBrains Internship Application](https://internship.jetbrains.com/).
+---
